@@ -2,6 +2,11 @@
 :root {
   --font1: "Times New Roman", Times, serif;
   --background: #292841;
+  --itemColor: #f5f5f5;
+  --itemHoverColor: #ff9900;
+  --itemBackground: #ffffff;
+  --textColor: #888888;
+  --listHoverColor: #dfdfec;
 }
 *,
 *:before,
@@ -48,4 +53,136 @@ nav {
   float: right;
   position: relative;
   z-index: 2;
+}
+
+.topNavbar > ul > li {
+  display: inline-block;
+}
+
+.topNavbar > ul > li > a {
+  display: inline;
+}
+
+.topNavbar > ul > li > a,
+.topNavbar > ul > li > a > i,
+.topNavbar > ul > li > a > span {
+  color: var(--itemColor);
+  font-weight: bold;
+}
+
+.topNavbar > ul > li > a.message,
+.topNavbar > ul > li > a.bell,
+.topNavbar > ul > li > a.user {
+  z-index: 3;
+}
+
+.topNavbar > ul > li > a.message:hover > i,
+.topNavbar > ul > li > a.bell:hover > i,
+.topNavbar > ul > li > a.user:hover > i,
+.topNavbar > ul > li > a.user:hover > span {
+  color: var(--itemHoverColor);
+  z-index: 4;
+  cursor: pointer;
+}
+
+.topNavbar > ul > li > a.bell > span {
+  margin-right: 0;
+  position: absolute;
+}
+
+.topNavbar > ul > li > a.bell > span > span {
+  position: relative;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  background-color: var(--itemHoverColor);
+  color: var(--itemColor);
+}
+
+.topNavbar > ul > li > a.line,
+.topNavbar > ul > li > a.user > span.username,
+.topNavbar > ul > li > a.user > span.arrowdown > i {
+  position: relative;
+}
+
+.topNavbar > ul > li.list > .dropdown,
+.topNavbar > ul > li.list1 > .dropdown1 {
+  display: none;
+}
+
+.topNavbar > ul > li.list:hover > .dropdown,
+.topNavbar > ul > li.list1:hover > .dropdown1 {
+  display: block;
+}
+
+.topNavbar > ul > li.list:hover > .dropdown,
+.topNavbar > ul > li.list1:hover > .dropdown1 {
+  display: block;
+  position: absolute;
+  transition: all 250ms;
+  border-radius: 0.25rem; /* 4px */
+  top: 5rem; /*80px*/
+  background-color: var(--itemBackground);
+  box-shadow: 0.125rem 0.125rem 0.125rem 0.125rem #d8d8d8; /*2px*/
+}
+
+.topNavbar > ul > li.list:hover > .dropdown::before,
+.topNavbar > ul > li.list1:hover > .dropdown1::before {
+  content: "";
+  border: 0.5rem solid transparent; /* 8px*/
+  border-bottom-color: #e8e8e8;
+  top: -1rem; /*-16px*/
+  position: absolute;
+}
+
+.topNavbar > ul > li.list:hover > .dropdown > ul > li:nth-child(1),
+.topNavbar > ul > li.list:hover > .dropdown > ul > li:nth-child(2) {
+  border-bottom: 0.063rem solid var(--textColor); /*1px*/
+}
+
+.topNavbar > ul > li.list:hover > .dropdown > ul > li > a > span.bold {
+  font-weight: 800;
+  color: var(--background);
+}
+
+.topNavbar > ul > li.list:hover > .dropdown > ul > li > a > span.text {
+  color: var(--textColor);
+}
+
+.topNavbar > ul > li.list:hover > .dropdown > ul > li > a > span.link {
+  border-bottom: none;
+  display: block;
+  text-align: center;
+  color: var(--background);
+  font-weight: 800;
+  line-height: 2;
+}
+
+.topNavbar > ul > li.list:hover > .dropdown > ul > li:hover {
+  background-color: var(--listHoverColor);
+  border-radius: 0.5rem; /*8px*/
+  border-bottom: none;
+  color: var(--itemColor);
+}
+
+.topNavbar > ul > li.list:hover > .dropdown > ul > li:hover > a > span.bold,
+.topNavbar > ul > li.list:hover > .dropdown > ul > li:hover > a > span.text,
+.topNavbar > ul > li.list:hover > .dropdown > ul > li:hover > a > span.link {
+  color: var(--background);
+}
+
+.topNavbar > ul > li.list1:hover > .dropdown1 > ul > li > a > span {
+  color: var(--textColor);
+  font-weight: 700;
+}
+
+.topNavbar > ul > li.list1:hover > .dropdown1 > ul > li:hover {
+  background-color: var(--listHoverColor);
+  border-radius: 0.375rem; /* 6px*/
+}
+
+.topNavbar > ul > li.list1:hover > .dropdown1 > ul > li:hover a > span {
+  color: var(--background);
 }

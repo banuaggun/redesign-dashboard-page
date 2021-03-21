@@ -16,6 +16,65 @@
   .menu > .container > .topNavbar > ul {
     right: 40px;
   }
+  .menu > .container > .topNavbar > ul {
+    right: 40px;
+  }
+  .menu > .container > .topNavbar > ul > li {
+    margin: 22.5px 0px 22.5px 10px;
+  }
+  .topNavbar > ul > li > a.message > i,
+  .topNavbar > ul > li > a.bell > i,
+  .topNavbar > ul > li > a.user > span.userphoto > i {
+    font-size: 1.563rem; /* 25px  icon font-size*/
+  }
+  .topNavbar > ul > li > a.bell > span > span {
+    padding: 3.2px;
+    font-size: 0.7rem; /* 11.2px  notification font-size*/
+    top: -8px;
+    right: 14px;
+  }
+  .topNavbar > ul > li > a.line {
+    font-size: 1.563rem; /*25px*/
+    bottom: 3px;
+  }
+  .topNavbar > ul > li > a.user > span.username,
+  .topNavbar > ul > li > a.user > span.arrowdown > i {
+    font-size: 1rem; /* 16px  text font-size*/
+    line-height: 1.78; /* 25 bölü 16 */
+    bottom: 3px;
+  }
+  .topNavbar > ul > li > a.user > span.arrowdown > i {
+    bottom: 5px;
+  }
+  .topNavbar > ul > li.list:hover > .dropdown::before {
+    left: calc(50% - 1.5rem); /*16px*/
+  }
+  .topNavbar > ul > li.list1:hover > .dropdown1::before {
+    left: calc(50% - 1rem); /*16px*/
+  }
+  .topNavbar > ul > li.list:hover > .dropdown {
+    width: 264px;
+    height: 200px;
+    transform: translateX(-100px);
+  }
+  .topNavbar > ul > li.list:hover > .dropdown > ul > li,
+  .topNavbar > ul > li.list1:hover > .dropdown1 > ul > li {
+    padding: 8px 8px 0px 8px;
+    margin: 8px 8px 0px 8px;
+  }
+  .topNavbar > ul > li.list:hover > .dropdown > ul > li > a {
+    font-size: 0.875rem; /*14px notification açılır liste font-size*/
+    line-height: 1.3;
+  }
+  .topNavbar > ul > li.list1:hover > .dropdown1 {
+    width: 140px;
+    height: 140px;
+    transform: translateX(-30px);
+  }
+  .topNavbar > ul > li.list1:hover > .dropdown1 > ul > li > a {
+    font-size: 0.875rem; /*14px user açılır liste font-size*/
+    line-height: 2;
+  }
 }
 
 @media only screen and (min-width: 62rem) and (max-width: 74.938rem) {
@@ -34,9 +93,66 @@
   .menu > .container > .topNavbar > ul {
     right: 40px;
   }
+  .menu > .container > .topNavbar > ul > li {
+    margin: 22.5px 0px 22.5px 10px;
+  }
+  .topNavbar > ul > li > a.message > i,
+  .topNavbar > ul > li > a.bell > i,
+  .topNavbar > ul > li > a.user > span.userphoto > i {
+    font-size: 1.563rem; /* 25px  icon font-size*/
+  }
+  .topNavbar > ul > li > a.bell > span > span {
+    padding: 3.2px;
+    font-size: 0.7rem; /* 11.2px  notification font-size*/
+    top: -8px;
+    right: 14px;
+  }
+  .topNavbar > ul > li > a.line {
+    font-size: 1.563rem; /*25px*/
+    bottom: 3px;
+  }
+  .topNavbar > ul > li > a.user > span.username,
+  .topNavbar > ul > li > a.user > span.arrowdown > i {
+    font-size: 1rem; /* 16px  text font-size*/
+    line-height: 1.78; /* 25 bölü 16 */
+    bottom: 3px;
+  }
+  .topNavbar > ul > li > a.user > span.arrowdown > i {
+    bottom: 5px;
+  }
+  .topNavbar > ul > li.list:hover > .dropdown::before {
+    left: calc(50% - 1.5rem); /*16px*/
+  }
+  .topNavbar > ul > li.list1:hover > .dropdown1::before {
+    left: calc(50% - 1rem); /*16px*/
+  }
+  .topNavbar > ul > li.list:hover > .dropdown {
+    width: 264px;
+    height: 200px;
+    transform: translateX(-100px);
+  }
+  .topNavbar > ul > li.list:hover > .dropdown > ul > li,
+  .topNavbar > ul > li.list1:hover > .dropdown1 > ul > li {
+    padding: 8px 8px 0px 8px;
+    margin: 8px 8px 0px 8px;
+  }
+  .topNavbar > ul > li.list:hover > .dropdown > ul > li > a {
+    font-size: 0.875rem; /*14px notification açılır liste font-size*/
+    line-height: 1.3;
+  }
+  .topNavbar > ul > li.list1:hover > .dropdown1 {
+    width: 140px;
+    height: 140px;
+    transform: translateX(-30px);
+  }
+  .topNavbar > ul > li.list1:hover > .dropdown1 > ul > li > a {
+    font-size: 0.875rem; /*14px user açılır liste font-size*/
+    line-height: 2;
+  }
 }
 
 @media only screen and (min-width: 48rem) and (max-width: 61.938rem) {
+  /* 768px =48rem , 991px=61.938rem*/
   .menu .container .topNavbar .logoArea {
     left: 30px;
     top: 0;
@@ -51,10 +167,69 @@
   }
   .menu .container .topNavbar ul {
     right: 30px;
+  }
+  .menu .container .topNavbar ul li {
+    margin-left: 10px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  .menu .container .topNavbar ul li a.message i,
+  .menu .container .topNavbar ul li a.bell i,
+  .menu .container .topNavbar ul li a.user span.userphoto i {
+    font-size: 1.375rem; /* 22px  icon font-size*/
+  }
+  .menu .container .topNavbar ul li a.bell span > span {
+    padding: 0.1rem; /*1.6px */
+    font-size: 0.6rem; /* 9.6px  notification icon font size*/
+    top: -10px;
+    right: 12px;
+  }
+  .menu .container .topNavbar ul li a.line {
+    font-size: 1.375rem; /* 22px */
+    bottom: 3px;
+  }
+  .menu .container .topNavbar ul li a.user span.username,
+  .menu .container .topNavbar ul li a.user span.arrowdown i {
+    font-size: 0.875rem; /* 14px text font-size */
+    line-height: 1.57; /* 22 bölü 14 */
+    bottom: 2px;
+  }
+  .menu .container .topNavbar ul li a.user span.arrowdown i {
+    bottom: 4px;
+  }
+  .topNavbar > ul > li.list:hover > .dropdown::before {
+    left: calc(50% - 1.5rem); /*16px*/
+  }
+  .topNavbar > ul > li.list1:hover > .dropdown1::before {
+    left: calc(50% - 1rem); /*16px*/
+  }
+  .topNavbar > ul > li.list:hover > .dropdown {
+    width: 264px;
+    height: 190px;
+    transform: translateX(-110px);
+  }
+  .topNavbar > ul > li.list:hover > .dropdown > ul > li,
+  .topNavbar > ul > li.list1:hover > .dropdown1 > ul > li {
+    padding: 8px 8px 0px 8px;
+    margin: 8px 8px 0px 8px;
+  }
+  .topNavbar > ul > li.list:hover > .dropdown > ul > li > a {
+    font-size: 0.75rem; /*12px notification açılır liste font-size*/
+    line-height: 1.3;
+  }
+  .topNavbar > ul > li.list1:hover > .dropdown1 {
+    width: 140px;
+    height: 130px;
+    transform: translateX(-40px);
+  }
+  .topNavbar > ul > li.list1:hover > .dropdown1 > ul > li > a {
+    font-size: 0.75rem; /*12px user açılır liste font-size*/
+    line-height: 1.5;
   }
 }
 
 @media only screen and (min-width: 36rem) and (max-width: 47.938rem) {
+  /*576px = 36rem, 767px =47.938rem*/
   .menu .container .topNavbar .logoArea {
     left: 30px;
     top: 0;
@@ -70,9 +245,68 @@
   .menu .container .topNavbar ul {
     right: 30px;
   }
+  .menu .container .topNavbar ul li {
+    margin-left: 10px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  .menu .container .topNavbar ul li a.message i,
+  .menu .container .topNavbar ul li a.bell i,
+  .menu .container .topNavbar ul li a.user span.userphoto i {
+    font-size: 1.375rem; /* 22px  icon font-size*/
+  }
+  .menu .container .topNavbar ul li a.bell span > span {
+    padding: 0.1rem; /*1.6px */
+    font-size: 0.6rem; /* 9.6px  notification icon font-size*/
+    top: -10px;
+    right: 12px;
+  }
+  .menu .container .topNavbar ul li a.line {
+    font-size: 1.375rem; /* 22px */
+    bottom: 3px;
+  }
+  .menu .container .topNavbar ul li a.user span.username,
+  .menu .container .topNavbar ul li a.user span.arrowdown i {
+    font-size: 0.875rem; /* 14px  text font-size*/
+    line-height: 1.57; /* 22 bölü 14 */
+    bottom: 2px;
+  }
+  .menu .container .topNavbar ul li a.user span.arrowdown i {
+    bottom: 4px;
+  }
+  .topNavbar > ul > li.list:hover > .dropdown::before {
+    left: calc(50% - 1.3rem); /*16px*/
+  }
+  .topNavbar > ul > li.list1:hover > .dropdown1::before {
+    left: calc(50% - 0.8rem); /*16px*/
+  }
+  .topNavbar > ul > li.list:hover > .dropdown {
+    width: 264px;
+    height: 200px;
+    transform: translateX(-110px);
+  }
+  .topNavbar > ul > li.list:hover > .dropdown > ul > li,
+  .topNavbar > ul > li.list1:hover > .dropdown1 > ul > li {
+    padding: 8px 8px 0px 8px;
+    margin: 8px 8px 0px 8px;
+  }
+  .topNavbar > ul > li.list:hover > .dropdown > ul > li > a {
+    font-size: 0.75rem; /*12px notification açılır liste font-size*/
+    line-height: 1.6;
+  }
+  .topNavbar > ul > li.list1:hover > .dropdown1 {
+    width: 140px;
+    height: 130px;
+    transform: translateX(-40px);
+  }
+  .topNavbar > ul > li.list1:hover > .dropdown1 > ul > li > a {
+    font-size: 0.75rem; /*12px user açılır liste font-size*/
+    line-height: 1.5;
+  }
 }
 
 @media only screen and (min-width: 25.875rem) and (max-width: 35.938rem) {
+  /*414px =25.875rem , 575px =35.938rem */
   .menu .container .topNavbar .logoArea {
     left: 20px;
     top: 0;
@@ -88,9 +322,69 @@
   .menu .container .topNavbar ul {
     right: 20px;
   }
+  .menu .container .topNavbar ul li {
+    margin-left: 5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .menu .container .topNavbar ul li a.message i,
+  .menu .container .topNavbar ul li a.bell i,
+  .menu .container .topNavbar ul li a.user span.userphoto i {
+    font-size: 1.25rem; /*20px  icon font-size*/
+  }
+  .menu .container .topNavbar ul li a.bell span > span {
+    padding: 0.1rem; /*1.6px */
+    font-size: 0.6rem; /* 9.6px  notification icon font-size*/
+    top: -10px;
+    right: 12px;
+  }
+  .menu .container .topNavbar ul li a.line {
+    font-size: 1.25rem; /* 20px */
+    bottom: 3px;
+  }
+  .menu .container .topNavbar ul li a.user span.username,
+  .menu .container .topNavbar ul li a.user span.arrowdown i {
+    font-size: 0.75rem; /* 12px  text-size*/
+    line-height: 1.6; /* 20 bölü 12 */
+    bottom: 2px;
+  }
+  .menu .container .topNavbar ul li a.user span.arrowdown i {
+    bottom: 4px;
+  }
+
+  .topNavbar > ul > li.list:hover > .dropdown::before {
+    left: calc(50% - 1.3rem); /*16px*/
+  }
+  .topNavbar > ul > li.list1:hover > .dropdown1::before {
+    left: calc(50% - 0.8rem); /*16px*/
+  }
+  .topNavbar > ul > li.list:hover > .dropdown {
+    width: 210px;
+    height: 190px;
+    transform: translateX(-80px);
+  }
+  .topNavbar > ul > li.list:hover > .dropdown > ul > li,
+  .topNavbar > ul > li.list1:hover > .dropdown1 > ul > li {
+    padding: 8px 8px 0px 8px;
+    margin: 8px 8px 0px 8px;
+  }
+  .topNavbar > ul > li.list:hover > .dropdown > ul > li > a {
+    font-size: 0.625rem; /*10px notification açılır liste font-size*/
+    line-height: 1.2;
+  }
+  .topNavbar > ul > li.list1:hover > .dropdown1 {
+    width: 120px;
+    height: 120px;
+    transform: translateX(-40px);
+  }
+  .topNavbar > ul > li.list1:hover > .dropdown1 > ul > li > a {
+    font-size: 0.625rem; /*10px user açılır liste font-size*/
+    line-height: 1;
+  }
 }
 
 @media only screen and (max-width: 25.813rem) {
+  /*413px = 25.813rem*/
   .menu .container .topNavbar .logoArea {
     left: 10px;
     top: 0;
@@ -105,5 +399,64 @@
   }
   .menu .container .topNavbar ul {
     right: 10px;
+  }
+  .menu .container .topNavbar ul li {
+    margin-left: 3px;
+    margin-top: 26px;
+    margin-bottom: 26px;
+  }
+  .menu .container .topNavbar ul li a.message i,
+  .menu .container .topNavbar ul li a.bell i,
+  .menu .container .topNavbar ul li a.user span.userphoto i {
+    font-size: 1.125rem; /*18px  icon font-size*/
+  }
+  .menu .container .topNavbar ul li a.bell span > span {
+    padding: 0.1rem; /*1.6px */
+    font-size: 0.6rem; /* 9.6px  notification icon font-size*/
+    top: -12px;
+    right: 10px;
+  }
+  .menu .container .topNavbar ul li a.line {
+    font-size: 1.125rem; /* 18px */
+    bottom: 3px;
+  }
+  .menu .container .topNavbar ul li a.user span.username,
+  .menu .container .topNavbar ul li a.user span.arrowdown i {
+    font-size: 0.625rem; /* 10px  text font-size*/
+    line-height: 1.8; /* 18 bölü 10 */
+    bottom: 2px;
+  }
+  .menu .container .topNavbar ul li a.user span.arrowdown i {
+    bottom: 4px;
+  }
+
+  .topNavbar > ul > li.list:hover > .dropdown::before {
+    left: calc(50% - 0.7rem); /*16px*/
+  }
+  .topNavbar > ul > li.list1:hover > .dropdown1::before {
+    left: calc(50% - 0.8rem); /*16px*/
+  }
+  .topNavbar > ul > li.list:hover > .dropdown {
+    width: 180px;
+    height: 180px;
+    transform: translateX(-80px);
+  }
+  .topNavbar > ul > li.list:hover > .dropdown > ul > li,
+  .topNavbar > ul > li.list1:hover > .dropdown1 > ul > li {
+    padding: 8px 8px 0px 8px;
+    margin: 8px 8px 0px 8px;
+  }
+  .topNavbar > ul > li.list:hover > .dropdown > ul > li > a {
+    font-size: 0.5rem; /*8px notification açılır liste font-size*/
+    line-height: 0.5;
+  }
+  .topNavbar > ul > li.list1:hover > .dropdown1 {
+    width: 100px;
+    height: 110px;
+    transform: translateX(-30px);
+  }
+  .topNavbar > ul > li.list1:hover > .dropdown1 > ul > li > a {
+    font-size: 0.5rem; /*8px user açılır liste font-size*/
+    line-height: 0.5;
   }
 }
