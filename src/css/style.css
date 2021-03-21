@@ -1,4 +1,51 @@
 @charset "utf-8";
+:root {
+  --font1: "Times New Roman", Times, serif;
+  --background: #292841;
+}
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+}
+
 body {
-  background-color: aquamarine;
+  width: 100px;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-size: 100%;
+}
+
+nav {
+  font-family: var(--font1);
+}
+
+.menu .container {
+  width: 100%;
+  height: auto;
+}
+
+.menu .container .topNavbar {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background-color: var(--background);
+}
+
+.topNavbar > .logoArea {
+  position: absolute;
+  z-index: 2;
+}
+
+.topNavbar > ul {
+  float: right;
+  position: relative;
+  z-index: 2;
 }

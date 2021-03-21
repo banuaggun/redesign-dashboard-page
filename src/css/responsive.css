@@ -1,6 +1,109 @@
 @charset "utf-8";
-@media only screen and (max-width: 413px) {
-  body {
-    background-color: darkolivegreen;
+
+@media only screen and (min-width: 75rem) {
+  .menu .container .topNavbar .logoArea {
+    left: 40px;
+    top: 0;
+  }
+  .menu .container .topNavbar .logoArea .logo .svg1 {
+    width: 192px;
+    height: 70px;
+  }
+  .menu .container .topNavbar .logoArea .logo .svg2,
+  .menu .container .topNavbar .logoArea .logo .svg3 {
+    display: none;
+  }
+  .menu > .container > .topNavbar > ul {
+    right: 40px;
+  }
+}
+
+@media only screen and (min-width: 62rem) and (max-width: 74.938rem) {
+  .menu .container .topNavbar .logoArea {
+    left: 40px;
+    top: 0;
+  }
+  .menu .container .topNavbar .logoArea .logo .svg1 {
+    width: 192px;
+    height: 70px;
+  }
+  .menu .container .topNavbar .logoArea .logo .svg2,
+  .menu .container .topNavbar .logoArea .logo .svg3 {
+    display: none;
+  }
+  .menu > .container > .topNavbar > ul {
+    right: 40px;
+  }
+}
+
+@media only screen and (min-width: 48rem) and (max-width: 61.938rem) {
+  .menu .container .topNavbar .logoArea {
+    left: 30px;
+    top: 0;
+  }
+  .menu .container .topNavbar .logoArea .logo .svg2 {
+    width: 170px;
+    height: 70px;
+  }
+  .menu .container .topNavbar .logoArea .logo .svg1,
+  .menu .container .topNavbar .logoArea .logo .svg3 {
+    display: none;
+  }
+  .menu .container .topNavbar ul {
+    right: 30px;
+  }
+}
+
+@media only screen and (min-width: 36rem) and (max-width: 47.938rem) {
+  .menu .container .topNavbar .logoArea {
+    left: 30px;
+    top: 0;
+  }
+  .menu .container .topNavbar .logoArea .logo .svg2 {
+    width: 170px;
+    height: 70px;
+  }
+  .menu .container .topNavbar .logoArea .logo .svg1,
+  .menu .container .topNavbar .logoArea .logo .svg3 {
+    display: none;
+  }
+  .menu .container .topNavbar ul {
+    right: 30px;
+  }
+}
+
+@media only screen and (min-width: 25.875rem) and (max-width: 35.938rem) {
+  .menu .container .topNavbar .logoArea {
+    left: 20px;
+    top: 0;
+  }
+  .menu .container .topNavbar .logoArea .logo .svg3 {
+    width: 145px;
+    height: 70px;
+  }
+  .menu .container .topNavbar .logoArea .logo .svg1,
+  .menu .container .topNavbar .logoArea .logo .svg2 {
+    display: none;
+  }
+  .menu .container .topNavbar ul {
+    right: 20px;
+  }
+}
+
+@media only screen and (max-width: 25.813rem) {
+  .menu .container .topNavbar .logoArea {
+    left: 10px;
+    top: 0;
+  }
+  .menu .container .topNavbar .logoArea .logo .svg3 {
+    width: 145px;
+    height: 70px;
+  }
+  .menu .container .topNavbar .logoArea .logo .svg1,
+  .menu .container .topNavbar .logoArea .logo .svg2 {
+    display: none;
+  }
+  .menu .container .topNavbar ul {
+    right: 10px;
   }
 }
