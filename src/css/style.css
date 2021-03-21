@@ -26,7 +26,7 @@ body {
   font-size: 100%;
 }
 
-nav {
+header {
   font-family: var(--font1);
 }
 
@@ -185,4 +185,25 @@ nav {
 
 .topNavbar > ul > li.list1:hover > .dropdown1 > ul > li:hover a > span {
   color: var(--background);
+}
+
+.searchArea {
+  position: absolute;
+  z-index: 2;
+  top: 22.5px;
+  bottom: 22.5px;
+  left: 272px;
+}
+
+.searchArea .search .prefix {
+  font-size: 20px;
+  color: var(--itemColor);
+}
+
+.searchArea .search input[type="text"] {
+  width: 440px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid var(--itemColor);
 }
