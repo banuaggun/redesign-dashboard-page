@@ -76,7 +76,7 @@
     line-height: 2;
   }
 
-  .searchArea {
+  .searchArea .search form {
     left: 272px;
     top: 22.5px;
     bottom: 22.5px;
@@ -88,8 +88,11 @@
     width: 600px;
     height: 20px;
   }
-  .searchArea .search form button.close-icon:after {
-    font-size: 20px;
+  .searchArea .search form button.close-icon span.closeIcon:after {
+    width: 20px;
+    height: 20px;
+    font-size: 0.875rem;
+    bottom: 2px;
   }
 }
 
@@ -165,18 +168,24 @@
     font-size: 0.875rem; /*14px user açılır liste font-size*/
     line-height: 2;
   }
-  .searchArea {
+
+  .searchArea .search form {
     left: 272px;
+    top: 22.5px;
+    bottom: 22.5px;
   }
-  .searchArea .search .prefix i {
-    font-size: 20px;
+  .searchArea .search form i.searchIcon {
+    font-size: 1.125px;
   }
   .searchArea .search input[type="text"] {
-    max-width: 600px;
-    min-width: 380px;
-    width: 100%;
-    box-sizing: border-box;
+    width: 380px;
     height: 20px;
+  }
+  .searchArea .search form button.close-icon span.closeIcon:after {
+    width: 20px;
+    height: 20px;
+    font-size: 0.875rem;
+    bottom: 2px;
   }
 }
 
@@ -254,6 +263,24 @@
   .topNavbar > ul > li.list1:hover > .dropdown1 > ul > li > a {
     font-size: 0.75rem; /*12px user açılır liste font-size*/
     line-height: 1.5;
+  }
+
+  .searchArea .search form {
+    left: 230px;
+    top: 26px;
+  }
+  .searchArea .search form i.searchIcon {
+    font-size: 16px;
+  }
+  .searchArea .search input[type="text"] {
+    width: 260px;
+    height: 20px;
+  }
+  .searchArea .search form button.close-icon span.closeIcon:after {
+    width: 18px;
+    height: 18px;
+    font-size: 0.75rem;
+    bottom: 2px;
   }
 }
 

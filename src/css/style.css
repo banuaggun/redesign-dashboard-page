@@ -188,7 +188,7 @@ header {
 }
 
 /* searchArea */
-.searchArea {
+.searchArea .search form {
   position: absolute;
   z-index: 3;
 }
@@ -199,7 +199,7 @@ header {
 
 .searchArea .search input[type="text"] {
   background-color: transparent;
-  border-bottom: 1px solid var(--itemColor);
+  border-bottom: 2px solid var(--listHoverColor);
 }
 
 .searchArea .search input[type="text"]:focus {
@@ -212,25 +212,23 @@ header {
 .searchArea .search form button.close-icon:focus {
   outline: none;
 }
-.searchArea .search form button.close-icon:after {
+.searchArea .search form button.close-icon span.closeIcon:after {
   display: inline-block;
+  outline: none;
   content: "X";
-  padding: 2px;
   margin: auto;
   text-align: center;
+  vertical-align: middle;
   color: var(--background);
-  width: 20px;
-  height: 20px;
-  font-size: 12px;
+  font-weight: 800;
   border-radius: 50%;
   background-color: var(--itemColor);
-  position: absolute;
-  visibility: visible;
-  right: 15px;
   z-index: 3;
-  vertical-align: middle;
+  position: relative;
   cursor: pointer;
+  visibility: visible;
 }
+
 .search-box:not(:valid) ~ .close-icon {
   display: none;
 }
