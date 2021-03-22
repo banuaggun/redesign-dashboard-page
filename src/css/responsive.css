@@ -75,6 +75,22 @@
     font-size: 0.875rem; /*14px user açılır liste font-size*/
     line-height: 2;
   }
+
+  .searchArea {
+    left: 272px;
+    top: 22.5px;
+    bottom: 22.5px;
+  }
+  .searchArea .search form i.searchIcon {
+    font-size: 18px;
+  }
+  .searchArea .search input[type="text"] {
+    width: 600px;
+    height: 20px;
+  }
+  .searchArea .search form button.close-icon:after {
+    font-size: 20px;
+  }
 }
 
 @media only screen and (min-width: 62rem) and (max-width: 74.938rem) {
@@ -148,6 +164,19 @@
   .topNavbar > ul > li.list1:hover > .dropdown1 > ul > li > a {
     font-size: 0.875rem; /*14px user açılır liste font-size*/
     line-height: 2;
+  }
+  .searchArea {
+    left: 272px;
+  }
+  .searchArea .search .prefix i {
+    font-size: 20px;
+  }
+  .searchArea .search input[type="text"] {
+    max-width: 600px;
+    min-width: 380px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 20px;
   }
 }
 

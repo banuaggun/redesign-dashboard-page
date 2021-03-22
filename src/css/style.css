@@ -187,23 +187,50 @@ header {
   color: var(--background);
 }
 
+/* searchArea */
 .searchArea {
   position: absolute;
-  z-index: 2;
-  top: 22.5px;
-  bottom: 22.5px;
-  left: 272px;
+  z-index: 3;
 }
 
-.searchArea .search .prefix {
-  font-size: 20px;
+.searchArea .search form i.searchIcon {
   color: var(--itemColor);
 }
 
 .searchArea .search input[type="text"] {
-  width: 440px;
-  height: 20px;
   background-color: transparent;
-  border: none;
-  border-bottom: 2px solid var(--itemColor);
+  border-bottom: 1px solid var(--itemColor);
+}
+
+.searchArea .search input[type="text"]:focus {
+  outline: none;
+}
+
+.searchArea .search form button.close-icon {
+  background-color: transparent;
+}
+.searchArea .search form button.close-icon:focus {
+  outline: none;
+}
+.searchArea .search form button.close-icon:after {
+  display: inline-block;
+  content: "X";
+  padding: 2px;
+  margin: auto;
+  text-align: center;
+  color: var(--background);
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  border-radius: 50%;
+  background-color: var(--itemColor);
+  position: absolute;
+  visibility: visible;
+  right: 15px;
+  z-index: 3;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.search-box:not(:valid) ~ .close-icon {
+  display: none;
 }
