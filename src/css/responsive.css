@@ -424,7 +424,7 @@
   }
   .menu .container .topNavbar .logoArea {
     left: 20px;
-    top: 0;
+    top: 10px;
   }
   .menu .container .topNavbar .logoArea .logo .svg3 {
     width: 145px;
@@ -435,14 +435,14 @@
     display: none;
   }
   .menu .container .topNavbar {
-    height: 70px;
+    height: 100px;
   }
   .menu .container .topNavbar ul {
     right: 20px;
   }
   .menu .container .topNavbar ul li {
     margin-left: 5px;
-    margin-top: 40px;
+    margin-top: 65px;
   }
   .menu .container .topNavbar ul li a.message i,
   .menu .container .topNavbar ul li a.bell i,
@@ -482,7 +482,7 @@
   }
   .topNavbar > ul > li.list:hover > .dropdown,
   .topNavbar > ul > li.list1:hover > .dropdown1 {
-    top: 80px;
+    top: 110px;
   }
   .topNavbar > ul > li.list:hover > .dropdown > ul > li,
   .topNavbar > ul > li.list1:hover > .dropdown1 > ul > li {
@@ -501,6 +501,23 @@
   .topNavbar > ul > li.list1:hover > .dropdown1 > ul > li > a {
     font-size: 0.625rem; /*10px user açılır liste font-size*/
     line-height: 1;
+  }
+  .searchArea .search form {
+    left: 200px;
+    top: 20px;
+  }
+  .searchArea .search form i.searchIcon {
+    font-size: 12px;
+  }
+  .searchArea .search input[type="text"] {
+    width: 160px;
+    height: 20px;
+  }
+  .searchArea .search form button.close-icon span.closeIcon:after {
+    width: 18px;
+    height: 18px;
+    font-size: 0.75rem;
+    bottom: 2px;
   }
 }
 
