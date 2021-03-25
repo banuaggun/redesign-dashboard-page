@@ -3,6 +3,7 @@
   --font1: "Times New Roman", Times, serif;
   --background: #292841;
   --itemColor: #f5f5f5;
+  --placeholderColor: #e6e4e4;
   --itemHoverColor: #ff9900;
   --itemBackground: #ffffff;
   --textColor: #888888;
@@ -210,6 +211,10 @@ header .top {
   outline: none;
 }
 
+.searchArea .search input[placeholder] {
+  color: var(--itemColor);
+}
+
 .searchArea .search form button.close-icon {
   background-color: transparent;
 }
@@ -235,4 +240,20 @@ header .top {
 
 .search-box:not(:valid) ~ .close-icon {
   display: none;
+}
+
+.searchArea .search input::-webkit-input-placeholder {
+  color: var(--placeholderColor);
+}
+
+.searchArea .search input::-moz-input-placeholder {
+  color: var(--placeholderColor);
+}
+
+.searchArea .search input::-ms-input-placeholder {
+  color: var(--placeholderColor);
+}
+
+.searchArea .search input::-moz-placeholder {
+  color: var(--placeholderColor);
 }
