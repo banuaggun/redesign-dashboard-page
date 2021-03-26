@@ -173,13 +173,15 @@
           <!-- leftMenu-->
 
           <div class="responsiveMenu">
-            <button class="openbtn" onclick="openNav()">
-              <i class="material-icons"></i>
-            </button>
-            <div id="mySidePanel" class="sidePanel">
-              <a href="#closeNav" class="closeBtn" onclick="closeNav()">X</a>
-              
-            </div><!--sidePanel-->
+            <input type="checkbox" class="openNav" id="openNav"/>
+            <label for="openNav" class="sidebarToggle">
+              <div class="rectangle1 sliding cross"></div>
+              <div class="sliding flat"></div>
+              <div class="rectangle2 sliding cross"></div>
+            </label>
+            <div class="sidePanel" id="sidePanel">
+
+            </div>
           </div><!--responsiveMenu-->
 
         </div>
