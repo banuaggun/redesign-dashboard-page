@@ -31,32 +31,40 @@
   .topNavbar > ul > li > a.message > i,
   .topNavbar > ul > li > a.bell > i,
   .topNavbar > ul > li > a.user > span.userphoto > i {
-    font-size: 1.563rem; /* 25px  icon font-size*/
+    font-size: 1.563rem;
   }
   .topNavbar > ul > li > a.bell > span > span {
     padding: 3.2px;
-    font-size: 0.7rem; /* 11.2px  notification font-size*/
+    font-size: 0.7rem;
     top: -8px;
     right: 14px;
   }
   .topNavbar > ul > li > a.line {
-    font-size: 1.563rem; /*25px*/
+    font-size: 1.563rem;
     bottom: 3px;
   }
   .topNavbar > ul > li > a.user > span.username,
   .topNavbar > ul > li > a.user > span.arrowdown > i {
-    font-size: 1rem; /* 16px  text font-size*/
-    line-height: 1.78; /* 25 bölü 16 */
+    font-size: 1rem;
+    line-height: 1.78;
     bottom: 3px;
   }
   .topNavbar > ul > li > a.user > span.arrowdown > i {
     bottom: 5px;
   }
   .topNavbar > ul > li.list:hover > .dropdown::before {
-    left: calc(50% - 1.5rem); /*16px*/
+    left: -webkit-calc(50% - 1.5rem);
+    left: -moz-calc(50% - 1.5rem);
+    left: -o-calc(50% - 1.5rem);
+    left: -ms-calc(50% - 1.5rem);
+    left: calc(50% - 1.5rem);
   }
   .topNavbar > ul > li.list1:hover > .dropdown1::before {
-    left: calc(50% - 1rem); /*16px*/
+    left: -webkit-calc(50% - 1rem);
+    left: -moz-calc(50% - 1rem);
+    left: -o-calc(50% - 1rem);
+    left: -ms-calc(50% - 1rem);
+    left: calc(50% - 1rem);
   }
   .topNavbar > ul > li.list:hover > .dropdown {
     width: 264px;
@@ -108,8 +116,8 @@
   .leftMenu {
     display: block;
   }
-  .responsiveMenu{
-    display:none;
+  .responsiveMenu {
+    display: none;
   }
 }
 
@@ -219,8 +227,8 @@
   .leftMenu {
     display: block;
   }
-  .responsiveMenu{
-    display:none;
+  .responsiveMenu {
+    display: none;
   }
 }
 
@@ -328,6 +336,24 @@
   }
   .leftMenu {
     display: none;
+  }
+  .responsiveMenu {
+    display: block;
+  }
+  .leftMenuResponsive {
+    top: 100px;
+  }
+  .leftMenuResponsive ul li a i {
+    font-size: 14px;
+  }
+  .leftMenuResponsive ul li a span {
+    font-size: 12px;
+  }
+  .sidebarToggle {
+    top: 65px;
+    left: 30px;
+    height: 22px;
+    width: 22px;
   }
 }
 
@@ -437,8 +463,23 @@
   .leftMenu {
     display: none;
   }
-  .responsiveMenu{
-    display:block;
+  .responsiveMenu {
+    display: block;
+  }
+  .leftMenuResponsive {
+    top: 100px;
+  }
+  .leftMenuResponsive ul li a i {
+    font-size: 14px;
+  }
+  .leftMenuResponsive ul li a span {
+    font-size: 12px;
+  }
+  .sidebarToggle {
+    top: 70px;
+    left: 30px;
+    height: 22px;
+    width: 22px;
   }
 }
 
@@ -548,8 +589,23 @@
   .leftMenu {
     display: none;
   }
-  .responsiveMenu{
+  .responsiveMenu {
     display: block;
+  }
+  .leftMenuResponsive {
+    top: 100px;
+  }
+  .leftMenuResponsive ul li a i {
+    font-size: 14px;
+  }
+  .leftMenuResponsive ul li a span {
+    font-size: 12px;
+  }
+  .sidebarToggle {
+    top: 70px;
+    left: 20px;
+    height: 20px;
+    width: 20px;
   }
 }
 
@@ -659,7 +715,22 @@
   .leftMenu {
     display: none;
   }
-  .responsiveMenu{
-    display:block;
+  .responsiveMenu {
+    display: block;
+  }
+  .leftMenuResponsive {
+    top: 80px;
+  }
+  .leftMenuResponsive ul li a i {
+    font-size: 14px;
+  }
+  .leftMenuResponsive ul li a span {
+    font-size: 12px;
+  }
+  .sidebarToggle {
+    top: 55px;
+    left: 10px;
+    height: 20px;
+    width: 20px;
   }
 }
