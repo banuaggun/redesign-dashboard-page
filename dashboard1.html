@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Static Template</title>
-    <link rel="stylesheet" type="text/css" href="./src/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="./src/css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="/src/css/dashboard.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -18,6 +17,7 @@
     />
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
     <script type="text/javascript" src="./src/js/index.js"></script>
+ 
   </head>
   <body>
     <header>
@@ -137,32 +137,32 @@
           <!--searchArea-->
 
           <div class="leftMenu">
-            <ul class="tab">
-              <li class="active tablinks" onclick="infoTab(event, 'indexPage')" id="defaultOpen">
+            <ul>
+              <li>
                 <a href="/index.html">
                   <i class="fa fa-home"></i>
                   <span>Home</span>
                 </a>
               </li>
-              <li class="tablinks" onclick="infoTab(event, 'dashboardPage')">
+              <li class="active">
                 <a href="/dashboard.html">
                   <i class="fa fa-bar-chart-o"></i>
                   <span>Dashboard</span>
                 </a>
               </li>
-              <li class="tablinks" onclick="infoTab(event, 'inboxPage')">
+              <li>
                 <a href="/inbox.html">
                   <i class="fa fa-inbox"></i>
                   <span>Inbox</span>
                 </a>
               </li>
-              <li class="tablinks" onclick="infoTab(event, 'calendarPage')">
+              <li>
                 <a href="/calendar.html">
                   <i class="fa fa-calendar"></i>
                   <span>Calendar</span>
                 </a>
               </li>
-              <li class="tablinks" onclick="infoTab(event, 'settingsPage')">
+              <li>
                 <a href="/settings.html">
                   <i class="fa fa-cog"></i>
                   <span>Settings</span>
@@ -181,31 +181,31 @@
             </label>
             <div class="leftMenuResponsive" id="leftMenuResponsive">
               <ul class="leftMenuResponsiveList">
-                  <li class="active tablinks" onclick="infoTab(event, 'indexPage')" id="defaultOpen">
+                  <li>
                     <a href="/index.html">
                       <i class="fa fa-home"></i>
                       <span>Home</span>
                     </a>
                   </li>
-                  <li class="tablinks" onclick="infoTab(event, 'dashboardPage')">
+                  <li class="active">
                       <a href="/dashboard.html">
                         <i class="fa fa-bar-chart-o"></i>
                         <span>Dashboard</span>
                       </a>
                     </li>
-                    <li class="tablinks" onclick="infoTab(event, 'inboxPage')">
+                    <li>
                       <a href="/inbox.html">
                         <i class="fa fa-inbox"></i>
                         <span>Inbox</span>
                       </a>
                     </li>
-                    <li class="tablinks" onclick="infoTab(event, 'calendarPage')">
+                    <li>
                       <a href="/calendar.html">
                         <i class="fa fa-calendar"></i>
                         <span>Calendar</span>
                       </a>
                     </li>
-                    <li class="tablinks" onclick="infoTab(event, 'settingsPage')">
+                    <li>
                       <a href="/settings.html">
                         <i class="fa fa-cog"></i>
                         <span>Settings</span>
@@ -220,7 +220,7 @@
       </div>
       <!--menu-->
     </header>
-    <section class="tab-content" id="dashboardPage">
+    <section class="tabcontent" id="dashboardPage">
       <div class="card1">
         <div class="inner1">
           <h4>Total Views</h4>
@@ -231,7 +231,6 @@
       </div>
       <img src="/src/images/dashboard-images/Bar Chart1.svg" style="position:absolute; top:120px; left:380px;" />
       <img src="/src/images/dashboard-images/Bar Chart2.svg" style="position:absolute; top:200px; left:420px;" />
-  
     </section>
   </body>
 </html>

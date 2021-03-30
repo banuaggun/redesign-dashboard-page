@@ -16,7 +16,7 @@
       type="text/css"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
-
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
     <script type="text/javascript" src="./src/js/index.js"></script>
   </head>
   <body>
@@ -137,32 +137,32 @@
           <!--searchArea-->
 
           <div class="leftMenu">
-            <ul>
-              <li>
+            <ul class="tab">
+              <li class="active tablinks" onclick="infoTab(event, 'indexPage')" id="defaultOpen">
                 <a href="/index.html">
                   <i class="fa fa-home"></i>
                   <span>Home</span>
                 </a>
               </li>
-              <li class="active">
+              <li class="tablinks" onclick="infoTab(event, 'dashboardPage')">
                 <a href="/dashboard.html">
                   <i class="fa fa-bar-chart-o"></i>
                   <span>Dashboard</span>
                 </a>
               </li>
-              <li>
+              <li class="tablinks" onclick="infoTab(event, 'inboxPage')">
                 <a href="/inbox.html">
                   <i class="fa fa-inbox"></i>
                   <span>Inbox</span>
                 </a>
               </li>
-              <li>
+              <li class="tablinks" onclick="infoTab(event, 'calendarPage')">
                 <a href="/calendar.html">
                   <i class="fa fa-calendar"></i>
                   <span>Calendar</span>
                 </a>
               </li>
-              <li>
+              <li class="tablinks" onclick="infoTab(event, 'settingsPage')">
                 <a href="/settings.html">
                   <i class="fa fa-cog"></i>
                   <span>Settings</span>
@@ -181,31 +181,31 @@
             </label>
             <div class="leftMenuResponsive" id="leftMenuResponsive">
               <ul class="leftMenuResponsiveList">
-                  <li>
+                  <li class="active tablinks" onclick="infoTab(event, 'indexPage')" id="defaultOpen">
                     <a href="/index.html">
                       <i class="fa fa-home"></i>
                       <span>Home</span>
                     </a>
                   </li>
-                  <li class="active">
+                  <li class="tablinks" onclick="infoTab(event, 'dashboardPage')">
                       <a href="/dashboard.html">
                         <i class="fa fa-bar-chart-o"></i>
                         <span>Dashboard</span>
                       </a>
                     </li>
-                    <li>
+                    <li class="tablinks" onclick="infoTab(event, 'inboxPage')">
                       <a href="/inbox.html">
                         <i class="fa fa-inbox"></i>
                         <span>Inbox</span>
                       </a>
                     </li>
-                    <li>
+                    <li class="tablinks" onclick="infoTab(event, 'calendarPage')">
                       <a href="/calendar.html">
                         <i class="fa fa-calendar"></i>
                         <span>Calendar</span>
                       </a>
                     </li>
-                    <li>
+                    <li class="tablinks" onclick="infoTab(event, 'settingsPage')">
                       <a href="/settings.html">
                         <i class="fa fa-cog"></i>
                         <span>Settings</span>
@@ -220,5 +220,8 @@
       </div>
       <!--menu-->
     </header>
+    <section class="tab-content" id="indexPage">
+      dfhyj
+    </section>
   </body>
 </html>

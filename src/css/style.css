@@ -366,8 +366,9 @@ header .top {
   color: var(--itemColor);
 }
 
-.leftMenu ul li.active,
+div.leftMenu ul.tab li.active,
 .leftMenuResponsive ul li.active {
+  transition: all;
   background-color: var(--background);
   background-image: -webkit-linear-gradient(
     to right,
