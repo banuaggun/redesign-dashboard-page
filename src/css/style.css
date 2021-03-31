@@ -368,7 +368,6 @@ header .top {
 
 div.leftMenu ul.tab li.active,
 .leftMenuResponsive ul li.active {
-  transition: all;
   background-color: var(--background);
   background-image: -webkit-linear-gradient(
     to right,
@@ -404,7 +403,7 @@ div.leftMenu ul.tab li.active,
   transform: translateX(-20px);
 }
 
-.leftMenu ul li.active a,
+div.leftMenu ul.tab li.active a,
 .leftMenuResponsive ul li.active a {
   margin-left: 20px;
 }
