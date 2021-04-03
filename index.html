@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
+    <title>Dashboard Page</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Static Template</title>
-    <link rel="stylesheet" type="text/css" href="./src/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="./src/css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="src/css/main.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -16,8 +15,10 @@
       type="text/css"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="/src/js/index.js"></script>
   </head>
+
   <body>
     <header>
       <div class="top"></div>
@@ -33,7 +34,7 @@
               <!-- logo-->
             </div>
             <!-- logoArea-->
-
+            
             <ul>
               <li>
                 <a href="#" class="message">
@@ -114,7 +115,6 @@
             </ul>
           </div>
           <!-- topNavbar-->
-
           <div class="searchArea">
             <div class="search">
               <form>
@@ -134,92 +134,98 @@
           </div>
           <!--searchArea-->
 
-          <div class="leftMenu">
-            <ul class="tab" id="tab">
-              <li class="active tablinks" onclick="infoTab(event, 'indexPage')" id="defaultOpen">
-                <a href="/index.html">
+          <div class="leftMenu"><!-- container-->
+            <ul class="tab-menu">
+              <li class="current">
+                <a href="index.html" id="tab1">
                   <i class="fa fa-home"></i>
                   <span>Home</span>
                 </a>
               </li>
-              <li class="tablinks" onclick="infoTab(event, 'dashboardPage')">
-                <a href="/dashboard.html">
+              <li>
+                <a href="dashboard.html" id="tab2">
                   <i class="fa fa-bar-chart-o"></i>
                   <span>Dashboard</span>
                 </a>
               </li>
-              <li class="tablinks" onclick="infoTab(event, 'inboxPage')">
-                <a href="/inbox.html">
+              <li>
+                <a href="inbox.html" id="tab3">
                   <i class="fa fa-inbox"></i>
                   <span>Inbox</span>
                 </a>
               </li>
-              <li class="tablinks" onclick="infoTab(event, 'calendarPage')">
-                <a href="/calendar.html">
+              <li>
+                <a href="calendar.html" id="tab4">
                   <i class="fa fa-calendar"></i>
                   <span>Calendar</span>
                 </a>
               </li>
-              <li class="tablinks" onclick="infoTab(event, 'settingsPage')">
-                <a href="/settings.html">
+              <li>
+                <a href="settings.html" id="tab5">
                   <i class="fa fa-cog"></i>
                   <span>Settings</span>
                 </a>
               </li>
             </ul>
           </div>
-          <!-- leftMenu-->
+          <!--leftMenu-->
 
           <div class="responsiveMenu">
             <input type="checkbox" class="openNav" id="openNav"/>
-            <label for="openNav" class="sidebarToggle">
+            <label for="openNav"class="sidebarToggle">
               <div class="rectangle1 sliding cross"></div>
               <div class="sliding flat"></div>
               <div class="rectangle2 sliding cross"></div>
             </label>
-            <div class="leftMenuResponsive" id="leftMenuResponsive">
-              <ul class="leftMenuResponsiveList">
-                  <li class="active tablinks" onclick="infoTab(event, 'indexPage')" id="defaultOpen">
-                    <a href="/index.html">
-                      <i class="fa fa-home"></i>
-                      <span>Home</span>
-                    </a>
-                  </li>
-                  <li class="tablinks" onclick="infoTab(event, 'dashboardPage')">
-                      <a href="/dashboard.html">
-                        <i class="fa fa-bar-chart-o"></i>
-                        <span>Dashboard</span>
-                      </a>
-                    </li>
-                    <li class="tablinks" onclick="infoTab(event, 'inboxPage')">
-                      <a href="/inbox.html">
-                        <i class="fa fa-inbox"></i>
-                        <span>Inbox</span>
-                      </a>
-                    </li>
-                    <li class="tablinks" onclick="infoTab(event, 'calendarPage')">
-                      <a href="/calendar.html">
-                        <i class="fa fa-calendar"></i>
-                        <span>Calendar</span>
-                      </a>
-                    </li>
-                    <li class="tablinks" onclick="infoTab(event, 'settingsPage')">
-                      <a href="/settings.html">
-                        <i class="fa fa-cog"></i>
-                        <span>Settings</span>
-                      </a>
-                    </li>
+            <div class="responsiveLeftMenu"><!-- container-->
+              <ul class="tab-menu responsive-tab-menu">
+                <li class="current">
+                  <a href="index.html" id="tab1">
+                    <i class="fa fa-home"></i>
+                    <span>Home</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="dashboard.html" id="tab2">
+                    <i class="fa fa-bar-chart-o"></i>
+                    <span>Dashboard</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="inbox.html" id="tab3">
+                    <i class="fa fa-inbox"></i>
+                    <span>Inbox</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="calendar.html" id="tab4">
+                    <i class="fa fa-calendar"></i>
+                    <span>Calendar</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="settings.html" id="tab5">
+                    <i class="fa fa-cog"></i>
+                    <span>Settings</span>
+                  </a>
+                </li>
               </ul>
-            </div> <!--leftMenuResponsive-->
+            </div>
+            <!--responsiveLeftMenu-->
           </div><!--responsiveMenu-->
-
-        </div>
-        <!-- container-->
-      </div>
-      <!--menu-->
-    </header>
-    <section class="tabcontent" id="indexPage">
-      dfhyj
-    </section>
+          <section class="tab-container">
+            <div id="tab1" class="tab-content">
+              <div class="card1">
+                içerik hazırlığı devam ediyor
+              </div>
+            </div>
+            <div id="tab2" class="tab-content">
+              <div class="dashboard-header">
+                <h1>overview</h1>
+              </div>
+             
+          </div>
+          </section>
+         
   </body>
 </html>

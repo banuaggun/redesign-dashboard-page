@@ -8,7 +8,8 @@
     left: 40px;
     top: 0;
   }
-  .menu .container .topNavbar .logoArea .logo .svg1 {
+
+  .menu .container .topNavbar .logoArea .logo img.svg1 {
     width: 192px;
     height: 70px;
   }
@@ -85,7 +86,7 @@
     margin: 8px 8px 0px 8px;
   }
   .topNavbar > ul > li.list:hover > .dropdown > ul > li > a {
-    font-size: 0.875rem; 
+    font-size: 0.875rem;
     line-height: 1.3;
   }
   .topNavbar > ul > li.list1:hover > .dropdown1 {
@@ -98,7 +99,7 @@
     transform: translateX(-30px);
   }
   .topNavbar > ul > li.list1:hover > .dropdown1 > ul > li > a {
-    font-size: 0.875rem; 
+    font-size: 0.875rem;
     line-height: 2;
   }
 
@@ -122,7 +123,9 @@
     bottom: 2px;
   }
   .leftMenu {
-    display: block;
+    width: 200px;
+    height: 100%;
+    top: 70px;
   }
   .responsiveMenu {
     display: none;
@@ -157,22 +160,22 @@
   .topNavbar > ul > li > a.message > i,
   .topNavbar > ul > li > a.bell > i,
   .topNavbar > ul > li > a.user > span.userphoto > i {
-    font-size: 1.563rem; 
+    font-size: 1.563rem;
   }
   .topNavbar > ul > li > a.bell > span > span {
     padding: 3.2px;
-    font-size: 0.7rem; 
+    font-size: 0.7rem;
     top: -8px;
     right: 14px;
   }
   .topNavbar > ul > li > a.line {
-    font-size: 1.563rem; 
+    font-size: 1.563rem;
     bottom: 3px;
   }
   .topNavbar > ul > li > a.user > span.username,
   .topNavbar > ul > li > a.user > span.arrowdown > i {
-    font-size: 1rem; 
-    line-height: 1.78; 
+    font-size: 1rem;
+    line-height: 1.78;
     bottom: 3px;
   }
   .topNavbar > ul > li > a.user > span.arrowdown > i {
@@ -186,7 +189,7 @@
     left: calc(50% - 1.5rem);
   }
   .topNavbar > ul > li.list1:hover > .dropdown1::before {
-    left: -webkit-calc(50% - 1rem); 
+    left: -webkit-calc(50% - 1rem);
     left: -moz-calc(50% - 1rem);
     left: -ms-calc(50% - 1rem);
     left: -o-calc(50% - 1rem);
@@ -247,9 +250,10 @@
     font-size: 0.875rem;
     bottom: 2px;
   }
-
   .leftMenu {
-    display: block;
+    width: 200px;
+    height: 100%;
+    top: 70px;
   }
   .responsiveMenu {
     display: none;
@@ -285,7 +289,7 @@
   .menu .container .topNavbar ul li a.message i,
   .menu .container .topNavbar ul li a.bell i,
   .menu .container .topNavbar ul li a.user span.userphoto i {
-    font-size: 1.375rem; 
+    font-size: 1.375rem;
   }
   .menu .container .topNavbar ul li a.bell span > span {
     padding: 0.1rem;
@@ -376,16 +380,16 @@
   .leftMenu {
     display: none;
   }
-  .responsiveMenu {
+  .responsiveLeftMenu {
     display: block;
-  }
-  .leftMenuResponsive {
+    width: 200px;
+    height: 100%;
     top: 100px;
   }
-  .leftMenuResponsive ul li a i {
+  .responsive-tab-menu li a i {
     font-size: 0.875rem;
   }
-  .leftMenuResponsive ul li a span {
+  .responsive-tab-menu li a span {
     font-size: 0.75rem;
   }
   .sidebarToggle {
@@ -517,16 +521,16 @@
   .leftMenu {
     display: none;
   }
-  .responsiveMenu {
+  .responsiveLeftMenu {
     display: block;
-  }
-  .leftMenuResponsive {
+    width: 200px;
+    height: 100%;
     top: 100px;
   }
-  .leftMenuResponsive ul li a i {
+  .responsive-tab-menu li a i {
     font-size: 0.875rem;
   }
-  .leftMenuResponsive ul li a span {
+  .responsive-tab-menu li a span {
     font-size: 0.75rem;
   }
   .sidebarToggle {
@@ -536,7 +540,6 @@
     width: 22px;
   }
 }
-
 @media only screen and (min-width: 25.875rem) and (max-width: 35.938rem) {
   header .top {
     display: block;
@@ -590,10 +593,10 @@
 
   .topNavbar > ul > li.list:hover > .dropdown::before {
     left: -webkit-calc(50% - 1.3rem);
-    left: -moz-calc(50% - 1.3rem); 
+    left: -moz-calc(50% - 1.3rem);
     left: -o-calc(50% - 1.3rem);
     left: -ms-calc(50% - 1.3rem);
-    left: calc(50% - 1.3rem); 
+    left: calc(50% - 1.3rem);
   }
   .topNavbar > ul > li.list1:hover > .dropdown1::before {
     left: -webkit-calc(50% - 0.8rem);
@@ -634,7 +637,7 @@
     transform: translateX(-40px);
   }
   .topNavbar > ul > li.list1:hover > .dropdown1 > ul > li > a {
-    font-size: 0.625rem; 
+    font-size: 0.625rem;
     line-height: 1;
   }
   .searchArea .search form {
@@ -658,16 +661,16 @@
   .leftMenu {
     display: none;
   }
-  .responsiveMenu {
+  .responsiveLeftMenu {
     display: block;
-  }
-  .leftMenuResponsive {
+    width: 200px;
+    height: 100%;
     top: 100px;
   }
-  .leftMenuResponsive ul li a i {
+  .responsive-tab-menu li a i {
     font-size: 0.875rem;
   }
-  .leftMenuResponsive ul li a span {
+  .responsive-tab-menu li a span {
     font-size: 0.75rem;
   }
   .sidebarToggle {
@@ -707,10 +710,10 @@
   .menu .container .topNavbar ul li a.message i,
   .menu .container .topNavbar ul li a.bell i,
   .menu .container .topNavbar ul li a.user span.userphoto i {
-    font-size: 1.125rem; 
+    font-size: 1.125rem;
   }
   .menu .container .topNavbar ul li a.bell span > span {
-    padding: 0.1rem; 
+    padding: 0.1rem;
     font-size: 0.6rem;
     top: -12px;
     right: 10px;
@@ -734,14 +737,14 @@
     left: -moz-calc(50% - 0.7rem);
     left: -ms-calc(50% - 0.7rem);
     left: -o-calc(50% - 0.7rem);
-    left: calc(50% - 0.7rem); 
+    left: calc(50% - 0.7rem);
   }
   .topNavbar > ul > li.list1:hover > .dropdown1::before {
     left: -webkit-calc(50% - 0.8rem);
     left: -moz-calc(50% - 0.8rem);
     left: -o-calc(50% - 0.8rem);
     left: -ms-calc(50% - 0.8rem);
-    left: calc(50% - 0.8rem); 
+    left: calc(50% - 0.8rem);
   }
   .topNavbar > ul > li.list:hover > .dropdown,
   .topNavbar > ul > li.list1:hover > .dropdown1 {
@@ -762,7 +765,7 @@
     margin: 8px 8px 0px 8px;
   }
   .topNavbar > ul > li.list:hover > .dropdown > ul > li > a {
-    font-size: 0.5rem; 
+    font-size: 0.5rem;
     line-height: 0.5;
   }
   .topNavbar > ul > li.list1:hover > .dropdown1 {
@@ -775,7 +778,7 @@
     transform: translateX(-30px);
   }
   .topNavbar > ul > li.list1:hover > .dropdown1 > ul > li > a {
-    font-size: 0.5rem; 
+    font-size: 0.5rem;
     line-height: 0.5;
   }
   .searchArea .search form {
@@ -799,16 +802,14 @@
   .leftMenu {
     display: none;
   }
-  .responsiveMenu {
+  .responsiveLeftMenu {
     display: block;
-  }
-  .leftMenuResponsive {
     top: 80px;
   }
-  .leftMenuResponsive ul li a i {
+  .responsive-tab-menu li a i {
     font-size: 0.875rem;
   }
-  .leftMenuResponsive ul li a span {
+  .responsive-tab-menu li a span {
     font-size: 0.75rem;
   }
   .sidebarToggle {

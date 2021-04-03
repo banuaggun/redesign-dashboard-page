@@ -16,8 +16,8 @@
       type="text/css"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
-    <script type="text/javascript" src="/src/js/index.js"></script>
-  </head>
+    <script src="/src/js/index2.js"></script>
+    </head>
   <body>
     <header>
       <div class="top"></div>
@@ -99,8 +99,7 @@
                 <div class="dropdown1">
                   <ul>
                     <li>
-                      <a href="#"
-                        ><span class="account">Account Manager</span></a
+                      <a href="#"><span class="account">Account Manager</span></a
                       >
                     </li>
                     <li>
@@ -136,38 +135,38 @@
           <!--searchArea-->
 
           <div class="leftMenu">
-            <ul class="tab">
-              <li class="active tablinks" onclick="infoTab(event, 'indexPage')" id="defaultOpen">
+            <div class="tab" id="tab">
+              <button class="tablinks" onclick="infoTab(event, 'index')" id="defaultOpen">
                 <a href="/index.html">
                   <i class="fa fa-home"></i>
                   <span>Home</span>
                 </a>
-              </li>
-              <li class="tablinks" onclick="infoTab(event, 'dashboardPage')">
+              </button>
+              <button class="tablinks" onclick="infoTab(event, 'dashboard')">
                 <a href="/dashboard.html">
                   <i class="fa fa-bar-chart-o"></i>
                   <span>Dashboard</span>
                 </a>
-              </li>
-              <li class="tablinks" onclick="infoTab(event, 'inboxPage')">
+              </button>
+              <button class="tablinks" onclick="infoTab(event, 'inbox')">
                 <a href="/inbox.html">
                   <i class="fa fa-inbox"></i>
                   <span>Inbox</span>
                 </a>
-              </li>
-              <li class="tablinks" onclick="infoTab(event, 'calendarPage')">
+              </button>
+              <button class="tablinks" onclick="infoTab(event, 'calendar')">
                 <a href="/calendar.html">
                   <i class="fa fa-calendar"></i>
                   <span>Calendar</span>
                 </a>
-              </li>
-              <li class="tablinks" onclick="infoTab(event, 'settingsPage')">
+              </button>
+              <button class="tablinks" onclick="infoTab(event, 'settings')">
                 <a href="/settings.html">
                   <i class="fa fa-cog"></i>
                   <span>Settings</span>
                 </a>
-              </li>
-            </ul>
+              </button>
+            </div>
           </div>
           <!-- leftMenu-->
 
@@ -179,38 +178,38 @@
               <div class="rectangle2 sliding cross"></div>
             </label>
             <div class="leftMenuResponsive" id="leftMenuResponsive">
-              <ul class="leftMenuResponsiveList">
-                  <li class="active tablinks" onclick="infoTab(event, 'indexPage')" id="defaultOpen">
+              <div class="leftMenuResponsiveList tab">
+                  <button class="tablinks" onclick="infoTab(event, 'index')" id="defaultOpen">
                     <a href="/index.html">
                       <i class="fa fa-home"></i>
                       <span>Home</span>
                     </a>
-                  </li>
-                  <li class="tablinks" onclick="infoTab(event, 'dashboardPage')">
+                  </button>
+                  <button class="tablinks" onclick="infoTab(event, 'dashboard')">
                       <a href="/dashboard.html">
                         <i class="fa fa-bar-chart-o"></i>
                         <span>Dashboard</span>
                       </a>
-                    </li>
-                    <li class="tablinks" onclick="infoTab(event, 'inboxPage')">
-                      <a href="/inbox.html">
-                        <i class="fa fa-inbox"></i>
-                        <span>Inbox</span>
+                  </button>
+                  <button class="tablinks" onclick="infoTab(event, 'inbox')">
+                    <a href="/inbox.html">
+                     <i class="fa fa-inbox"></i>
+                      <span>Inbox</span>
                       </a>
-                    </li>
-                    <li class="tablinks" onclick="infoTab(event, 'calendarPage')">
+                  </button>
+                    <button class="tablinks" onclick="infoTab(event, 'calendar')">
                       <a href="/calendar.html">
                         <i class="fa fa-calendar"></i>
                         <span>Calendar</span>
                       </a>
-                    </li>
-                    <li class="tablinks" onclick="infoTab(event, 'settingsPage')">
+                    </button>
+                    <button class="tablinks" onclick="infoTab(event, 'settings')">
                       <a href="/settings.html">
                         <i class="fa fa-cog"></i>
                         <span>Settings</span>
                       </a>
-                    </li>
-              </ul>
+                  </button>
+                </div>
             </div> <!--leftMenuResponsive-->
           </div><!--responsiveMenu-->
 
@@ -219,7 +218,7 @@
       </div>
       <!--menu-->
     </header>
-    <section class="tab-content" id="inboxPage">
+    <section class="tabcontent" id="inbox">
       dfhyj
     </section>
   </body>
