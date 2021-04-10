@@ -1,3 +1,4 @@
+/*
 $(document).ready(function () {
   $(".tab-menu a").click(function (event) {
     event.preventDefault();
@@ -8,3 +9,5 @@ $(document).ready(function () {
     $(tab).fadeIn();
   });
 });
+
+*/
